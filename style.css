@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    background-color: floralwhite;
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.corner-logo {
+    width: 60px;          
+    position: fixed;      
+    top: 10px;            
+    left: 10px;           
+    z-index: 1000;        
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: RoyalBlue;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar .brand {
+    font-size: 44px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+}
+
+.navbar a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #66c0f4e6;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.game-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.game-card {
+    width: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: CornflowerBlue;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.game-card p {
+    color: #66c0f4;
+    margin: 0 10px 10px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px 12px #66c0f4e6;
+}
+
+.details-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+
+    object-fit: contain;
+}
+
+.details-release {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.slideshow-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    color: #66c0f4;
+}
+
+.fade {
+    animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
