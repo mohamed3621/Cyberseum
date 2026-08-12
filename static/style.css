@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: floralwhite;
     color: rgb(0, 0, 0);
-    margin-top: 70px;
+    margin-top: 62px;
 }
 main {
     margin-left: 20px;
@@ -12,7 +12,7 @@ h1 {
     text-align: center;
 }
 .corner-logo {
-    width: 100px;
+    width: 130px;
     display: block;
 }
 .navbar {
@@ -25,7 +25,7 @@ h1 {
 .navbar ul {
     list-style-type: none;
     background-color: RoyalBlue;
-    padding: 10px 20px;
+    padding: 6px 20px;
     margin: 0px;
     display: flex;
     align-items: center;
@@ -52,9 +52,12 @@ h1 {
 .navbar a:hover {
     background-color: #66c0f4e6;
 }
+.navbar .brand a:hover {
+    background-color: transparent;
+}
 .page-nav-btn {
     position: fixed;
-    top: 90px;
+    top: 80px;
     z-index: 999;
     background-color: RoyalBlue;
     color: white;
@@ -98,8 +101,7 @@ h1 {
 .game-card img {
     width: 100%;
     height: 170px;
-    object-fit: contain;
-    background-color: CornflowerBlue;
+    object-fit: cover;
 }
 .game-card h3 {
     color: white;
@@ -119,7 +121,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 82px);
     box-sizing: border-box;
     padding: 20px 40px;
     flex-wrap: wrap;
@@ -128,17 +130,13 @@ h1 {
     flex: 0 0 auto;
     width: 480px;
     height: 480px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: CornflowerBlue;
     border-radius: 10px;
     overflow: hidden;
 }
 .details-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .details-right {
     max-width: 500px;
@@ -158,8 +156,8 @@ h1 {
     position: relative;
     margin: auto;
     margin-top: 30px;
-    background-color: black;
     border-radius: 10px;
+    overflow: hidden;
 }
 .slide {
     display: none;
@@ -167,7 +165,7 @@ h1 {
 .slide img {
     width: 100%;
     height: 450px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 .prev, .next {
