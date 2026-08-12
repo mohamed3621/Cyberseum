@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: floralwhite;
     color: rgb(0, 0, 0);
-    margin-top: 60px;
+    margin-top: 70px;
 }
 main {
     margin-left: 20px;
@@ -12,11 +12,8 @@ h1 {
     text-align: center;
 }
 .corner-logo {
-    width: 100px;          
-    position: fixed;      
-    top: 10px;            
-    left: 10px;           
-    z-index: 1000;        
+    width: 100px;
+    display: block;
 }
 .navbar {
     position: fixed;
@@ -28,20 +25,20 @@ h1 {
 .navbar ul {
     list-style-type: none;
     background-color: RoyalBlue;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
 }
 .navbar li {
     list-style: none;
 }
+.navbar li:nth-child(2) {
+    margin-left: 30px;
+}
 .navbar .brand {
-    font-size: 44px;
-    font-weight: bold;
-    color: white;
-    padding: 10px 15px;
+    padding: 0;
 }
 .navbar a {
     color: white;
@@ -53,6 +50,30 @@ h1 {
     font-weight: bold;
 }
 .navbar a:hover {
+    background-color: #66c0f4e6;
+}
+.page-nav-btn {
+    position: fixed;
+    top: 90px;
+    z-index: 999;
+    background-color: RoyalBlue;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.back-btn {
+    left: 20px;
+}
+.next-btn {
+    right: 20px;
+}
+.page-nav-btn:hover {
     background-color: #66c0f4e6;
 }
 .game-grid {
@@ -93,17 +114,44 @@ h1 {
     transform: scale(1.05);
     box-shadow: 0 0 40px 12px #66c0f4e6;
 }
+.game-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: calc(100vh - 90px);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+.details-left {
+    flex: 0 0 auto;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: CornflowerBlue;
+    border-radius: 10px;
+    overflow: hidden;
+}
 .details-img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
     object-fit: contain;
+}
+.details-right {
+    max-width: 500px;
+    max-height: 100%;
+    overflow-y: auto;
 }
 .details-release {
     font-size: 18px;
     color: #000000;
     margin-bottom: 15px;
+}
+.details-description {
+    line-height: 1.5;
 }
 .slideshow-container {
     max-width: 750px;
