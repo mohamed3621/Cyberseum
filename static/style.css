@@ -168,3 +168,38 @@ h1 {
     from { opacity: 0.4; }
     to { opacity: 1; }
 }
+
+  GNU nano 9.1                              static/style.css
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    color: #66c0f4;
+}
+
+.fade {
+    animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+^G Help       ^O Write Out  ^F Where Is   ^K Cut        ^T Execute    ^C Location   M-U Undo
+^X Exit       ^R Read File  ^\ Replace    ^U Paste      ^J Justify    ^/ Go To Line M-E Redo
+
+git add -A
+   git commit -m "Make logo bigger"
+   git push
+
+x
+
