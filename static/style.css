@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: floralwhite;
     color: rgb(0, 0, 0);
-    margin-top: 62px;
+    margin-top: 95px;
 }
 main {
     margin-left: 20px;
@@ -57,7 +57,7 @@ h1 {
 }
 .page-nav-btn {
     position: fixed;
-    top: 80px;
+    top: 108px;
     z-index: 999;
     background-color: RoyalBlue;
     color: white;
@@ -121,7 +121,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 110px);
     box-sizing: border-box;
     padding: 20px 40px;
     flex-wrap: wrap;
